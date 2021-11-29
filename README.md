@@ -135,4 +135,4 @@ or
 ### Credits
 The code of this repository partly relies on [ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch).   
 I would like to express my gratitude to the authors of the [ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch) repository.  
-Thanks to Khosla, Tian, and et al., this article was inspired by the paper [Supervised Contrastive Learning](https://arxiv.org/pdf/2004.11362.pdf).  
+Thanks to Khosla, Tian, and et al, this article was inspired by the paper [Supervised Contrastive Learning](https://arxiv.org/pdf/2004.11362.pdf).  
