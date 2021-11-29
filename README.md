@@ -1,11 +1,14 @@
 # Enhancing Aspect-Based Sentiment Analysis with Supervised Contrastive Learning.
 
-> Enhancing Aspect-Based Sentiment Analysis with Supervised
-Contrastive Learning.
+This repo contains the PyTorch code and implementation for the paper *Enhancing Aspect-Based Sentiment Analysis with Supervised Contrastive Learning*.
 
-This repo contains the PyTorch implementaion for the paper Enhancing Aspect-Based Sentiment Analysis with Supervised Contrastive Learning.
+[**Enhancing Aspect-Based Sentiment Analysis with Supervised Contrastive Learning**](https://dl.acm.org/doi/pdf/10.1145/3459637.3482096) 
+<br>
+Bin Liang<sup>#</sup>, Wangda Luo<sup>#</sup>, Xiang Li, Lin Gui, Min Yang, Xiaoqi Yu, and Ruifeng Xu<sup>*</sup>. *Proceedings of CIKM 2020*
+  
+Please cite our paper and kindly give a star for this repository if you use this code. 
 
-For any questions about the implementation, plaese email luowangda_hitsz@163.com or bin.liang@stu.hit.edu.cn.
+For any question, plaese email luowangda_hitsz@163.com or bin.liang@stu.hit.edu.cn.
 
 ### Model Overview
 ![model](./img/model_overview.png)
@@ -94,7 +97,28 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3459637.3482096},
 doi = {10.1145/3459637.3482096},
+abstract = {Most existing aspect-based sentiment analysis (ABSA) research efforts are devoted to extracting the aspect-dependent sentiment features from the sentence towards the given aspect. However, it is observed that about 60% of the testing aspects in commonly used public datasets are unknown to the training set. That is, some sentiment features carry the same polarity regardless of the aspects they are associated with (aspect-invariant sentiment), which props up the high accuracy of existing ABSA models when inevitably inferring sentiment polarities for those unknown testing aspects. Therefore, in this paper, we revisit ABSA from a novel perspective by deploying a novel supervised contrastive learning framework to leverage the correlation and difference among different sentiment polarities and between different sentiment patterns (aspect-invariant/-dependent). This allows improving the sentiment prediction for (unknown) testing aspects in the light of distinguishing the roles of valuable sentiment features. Experimental results on 5 benchmark datasets show that our proposed approach substantially outperforms state-of-the-art baselines in ABSA. We further extend existing neural network-based ABSA models with our proposed framework and achieve improved performance.},
+booktitle = {Proceedings of the 30th ACM International Conference on Information &amp; Knowledge Management},
+pages = {3242–3247},
+numpages = {6},
+keywords = {sentiment analysis, contrastive learning, aspect sentiment analysis},
+location = {Virtual Event, Queensland, Australia},
+series = {CIKM '21}
+}
+```
+or
+
+```
+@inproceedings{liang2021enhancing,
+  title={Enhancing Aspect-Based Sentiment Analysis with Supervised Contrastive Learning},
+  author={Liang, Bin and Luo, Wangda and Li, Xiang and Gui, Lin and Yang, Min and Yu, Xiaoqi and Xu, Ruifeng},
+  booktitle={Proceedings of the 30th ACM International Conference on Information \& Knowledge Management},
+  pages={3242--3247},
+  year={2021}
+}
 ```
 
 ### Credits
 The code of this repository partly relies on [ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch).
+I would like to express my gratitude to the authors of the [ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch) repository.  
+Thanks to Khosla, Tian, and et al., this article was inspired by the paper [Supervised Contrastive Learning](https://arxiv.org/pdf/2004.11362.pdf)  
