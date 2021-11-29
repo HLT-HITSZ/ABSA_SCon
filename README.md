@@ -47,7 +47,7 @@ Contrastive-aspect-label(0:negative;1:netrual;2:positive)
 a) Download the pytorch version pre-trained bert-base-uncased model and vocabulary from the link provided by huggingface. Then change the value of parameter --bert_model_dir to the directory of the bert model.
 you can get the pre-trained bert-base-uncased model in https://github.com/huggingface/transformers.
 
-b) Label enhancement method. For new data, additional supervised signals need to be obtained through label enhancement;  
+b) Label augment method. For new data, additional supervised signals need to be obtained through label enhancement;  
 &nbsp;&nbsp;&nbsp;&nbsp;i) Through BERT overfitting the training set, the acc can reach more than 97%;  
 &nbsp;&nbsp;&nbsp;&nbsp;ii) Replace aspect with other or mask, and get the emotional label of the aspect after replacing the aspect;  
 &nbsp;&nbsp;&nbsp;&nbsp;iii) Determine whether the output label is consistent with the real label, and fill in the aspect-dependent/aspect-invariant label for the data.  
@@ -119,6 +119,6 @@ or
 ```
 
 ### Credits
-The code of this repository partly relies on [ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch).
+The code of this repository partly relies on [ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch).   
 I would like to express my gratitude to the authors of the [ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch) repository.  
 Thanks to Khosla, Tian, and et al., this article was inspired by the paper [Supervised Contrastive Learning](https://arxiv.org/pdf/2004.11362.pdf)  
